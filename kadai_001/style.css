@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+body{
+  font-family: "Noto Sans JP", sans-serif;
+  color: #000;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+
+/* ★PC用スタイル★ */
+
+
+
+@media screen and (min-width:768px) {
+  
+  body{
+    max-width: 1336px;
+    min-width: 900px;
+    margin: 0 auto 0 auto;
+    line-height: 1.5;
+  }
+
+
+/* 共通 */
+
+.__font,.__font2 {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.__section,.__section2 {
+  width: 836px;
+  margin: 75px auto 0;
+}
+
+.__inner {
+  margin: 75px auto 0;  
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 25px auto 0;
+}
+
+.header-title {
+  border: 1px solid #000;
+  padding: 0 20px;
+}
+
+.header-nav-list {
+    display: flex;
+}
+
+.header-nav-item + .header-nav-item {
+    margin-left: 20px;
+}
+
+
+/* kv */
+
+.kv {
+   width: 100%; 
+   margin: 50px 0 0;
+}
+
+/* about */
+.about-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-img {
+    border-radius: 150px;
+}
+
+.about-txt-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about-txt-detail {
+    list-style-type: disc;
+    margin: 24px;
+    padding: 0 12px;
+}
+
+/* works */
+.works-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.works-inner-box + .works-inner-box{
+  margin-left: 4px;
+}
+
+.works-img,.works-txt {
+  width: 270px;   
+}
+
+.works-img{
+  height: 193px;
+}
+
+/* footer */
+
+.footer {
+    padding-top: 150px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+}
+
+/* ★スマートフォン用★ */
+
+@media screen and (max-width:767px) {
+  
+  body{
+    min-width: 375px;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+/* 共通 */
+
+.__font {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.__font2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.__section {
+  width: 80%;
+  margin: 80px auto 0;
+}
+
+.__section2 {
+  width: 90%;
+  margin: 100px auto 0;
+}
+
+.__inner {
+  margin: 30px auto 0;  
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 35px auto 0;
+}
+
+.header-title {
+  border: 1px solid #000;
+  padding: 0 10px;
+}
+
+.header-nav-list {
+    display: flex;
+}
+
+.header-nav-item + .header-nav-item {
+    margin-left: 10px;
+}
+
+
+/* kv */
+
+.kv {
+  width: 100%; 
+  margin: 35px 0 0 0;
+}
+
+/* about */
+
+.about-img {
+  border-radius: 150px;
+}
+
+.about-txt-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.about-txt-detail {
+  list-style-type: disc;
+  margin: 12px 0 0 20px;
+  padding-left: 12px;
+}
+
+/* works */
+
+.works-inner-box + .works-inner-box {
+  margin-top: 50px;
+}
+
+.works-txt {
+  margin-top: 12px;
+  text-align: center;
+  }
+
+  /* footer */
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+}
+
